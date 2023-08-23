@@ -1,0 +1,228 @@
+#stopwatch_display {
+	font-family: 'Fugaz One', cursive;
+	font-size: 100px;
+	text-align: center;
+}
+#practice_alg {
+	margin: 1rem;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+	flex: 1;
+}
+
+.selectorgroup {
+	display: flex;
+	margin: 0.3rem;
+    align-items: center;
+}
+
+.selectorgroup > button,
+.selectorgroup > label,
+.selectorgroup > select
+{
+	flex: 1;
+}
+
+
+.selectorgroup > label,
+.selectorgroup > select
+{
+	width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+	#stopwatch_display {
+		font-family: 'Fugaz One', cursive;
+		font-size: 60px;
+		text-align: center;
+	}
+	#practice_alg {
+		font-size: 15px;
+		text-align: center;
+		font-family: 'Secular One', sans-serif;
+	}
+	#timerstats table
+	{
+		width: 100%;
+	}
+}
+
+#stopwatch_display.pressed {
+	color: red;
+}
+
+#algset_selector select {
+	padding: 0.5rem;
+	border-radius: 2px;
+}
+
+#algset_selector,
+#practice_alg_div {
+	margin: 0 auto;
+	text-align: center;
+	margin: 1rem;
+}
+
+#practice_alg_div
+{
+	display: flex;
+	border-bottom: 1px solid #555;
+    padding-bottom: 20px;
+}
+
+#timerdisplay {
+	border: 1px solid black;
+    border-radius: 2px;
+}
+.darkmode #timerdisplay {
+	border: 1px solid white;
+}
+
+#timerstats {
+	border: 1px solid black;
+    border-radius: 2px;
+}
+
+.darkmode #timerstats {
+	border: 1px solid white;
+}
+
+
+#timerstats table {
+	border: none;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#timerstats table a {
+	text-decoration: none !important;
+}
+
+#timerstats table td:nth-child(1) {
+	width: 55px;
+}
+
+#timerstats table img {
+		width: 50px;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	 -khtml-user-select: none; /* Konqueror HTML */
+	   -moz-user-select: none; /* Old versions of Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+			user-select: none; /* Non-prefixed version, currently
+								  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#algstopractice
+{
+	text-align: center;
+	display: none;
+}
+
+.algscheckbox:checked + label .algtopracticeopt 
+{
+	border: 3px inset #333;
+    background-color: #555;
+}
+
+.algscheckbox + label .algtopracticeopt 
+{
+    text-align: left;
+	cursor: pointer;
+}
+
+.algtopracticeopt 
+{
+    margin: 5px 2px;
+    border: 3px solid transparent;
+    padding: 5px;
+    display: flex;	
+    align-items: center;
+}
+
+.algtopracticeopt > .icube
+{
+	margin-right: 5px;
+}
+
+.fa-eraser {
+	cursor: pointer;
+}
+
+.catstopractice
+{
+	border: 1px solid #333;
+    margin: 10px;
+	padding: 5px;
+    border-radius: 2px;
+}
+
+#selectspecificcases
+{
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+
+ul.newbreadcrumbs {
+	display: inline-block;
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin: -0.5rem;
+}
+
+ul.newbreadcrumbs li {
+	display: inline-block;
+}
+
+ul.newbreadcrumbs li + li:before {
+	content: "/ ";
+}
+
+ul.newbreadcrumbs li a {
+	color: black;
+}
+.darkmode ul.newbreadcrumbs li a {
+	color: white;
+}
+
+
+.catstopractice .categoryselector
+{
+	padding: 0.5em;
+	background-color: #222;
+	color: #eee;
+}
+
+.darkmode .catstopractice .categoryselector
+{
+	background-color: #eee;
+	color: #222;
+}
+
+.category-description {
+    background-color: #aaa;
+    padding: 10px;
+}
+
+.darkmode .category-description
+{
+	background-color: #000;
+}
+
+.catselector,
+#hideimage,
+.algscheckbox
+{
+	margin-right: 5px;
+}
+
+.catstopractice > label
+{
+	width: 100%;
+}

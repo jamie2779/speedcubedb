@@ -1,0 +1,272 @@
+#stopwatch_display {
+	font-family: 'Fugaz One', cursive;
+	font-size: 50px;
+	text-align: center;
+}
+#practice_alg {
+	margin: 1rem;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+	flex: 1;
+}
+
+.selectorgroup {
+	display: flex;
+	margin: 0.3rem;
+    align-items: center;
+}
+
+.selectorgroup > button,
+.selectorgroup > label,
+.selectorgroup > select
+{
+	flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+	#stopwatch_display {
+		font-family: 'Fugaz One', cursive;
+		font-size: 60px;
+		text-align: center;
+	}
+	#practice_alg {
+		font-size: 15px;
+		text-align: center;
+		font-family: 'Secular One', sans-serif;
+	}
+	#timerstats table
+	{
+		width: 100%;
+	}
+}
+
+#stopwatch_display.pressed {
+	color: red;
+}
+
+#algset_selector select {
+	padding: 0.5rem;
+	border-radius: 2px;
+}
+
+#algset_selector,
+#practice_alg_div {
+	margin: 0 auto;
+	text-align: center;
+	margin: 1rem;
+	
+    justify-content: center;
+}
+
+#practice_alg_div
+{
+	display: flex;
+	border-bottom: 1px solid #555;
+    padding-bottom: 20px;
+}
+
+#timerdisplay {
+	border: 1px solid white;
+    border-radius: 2px;
+}
+
+#timerstats {
+	border: 1px solid #333;
+    border-radius: 2px;
+}
+
+
+
+#timerstats table {
+	border: none;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#timerstats table a {
+	text-decoration: none !important;
+}
+
+#timerstats table td:nth-child(1) {
+	width: 55px;
+}
+
+#timerstats table img {
+		width: 50px;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	 -khtml-user-select: none; /* Konqueror HTML */
+	   -moz-user-select: none; /* Old versions of Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+			user-select: none; /* Non-prefixed version, currently
+								  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#algstopractice
+{
+	text-align: center;
+	display: none;
+}
+
+.algtopracticeopt 
+{
+    margin: 0.5rem;
+}
+
+.fa-eraser {
+	cursor: pointer;
+}
+
+
+.catstopractice
+{
+	border: 1px solid white;
+    display: inline-table;
+    margin: 3px;
+    border-radius: 2px;
+}
+
+#selectspecificcases
+{
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+
+ul.newbreadcrumbs {
+	display: inline-block;
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin: -0.5rem;
+}
+
+ul.newbreadcrumbs li {
+	display: inline-block;
+}
+
+ul.newbreadcrumbs li + li:before {
+	content: "/ ";
+}
+
+
+.catstopractice .categoryselector
+{
+	padding: 0.5em;
+	background-color: #eee;
+	color: #222;
+}
+
+
+.category-description {
+	background-color: #000;
+    padding: 10px;
+}
+
+
+.catselector,
+#hideimage,
+.algscheckbox
+{
+	margin-right: 5px;
+}
+.pllselector
+{
+	display: inline-flex;
+	margin-bottom: 5px;
+    margin-right: 5px;
+	flex: 1;
+}
+
+.pllselector input
+{
+	display: none;
+}
+
+.pllselector input:checked + label
+{
+	border: 1px solid #333;
+	background-color: #444;
+}
+
+.pllselector label
+{
+	border: none;
+	display: flex;
+	width: 100%;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+
+.pllselector label:hover
+{
+	box-shadow: black 0px 0px 17px
+}
+
+.pllselector label > div:nth-child(1)
+{
+	flex: 1;
+    padding: 5px 10px;
+	text-align: center;
+}
+
+.pllselector label > div:nth-child(2)
+{
+    padding: 5px 10px;
+    align-self: center;
+	flex: 3;
+	min-width: 50px;
+}
+
+.crosscolorselect div
+{
+	width: 50px;
+	height: 50px;
+}
+
+.crosscolorselect input
+{
+	display: none;
+}
+
+.crosscolorselect label
+{
+	width: 50px;
+	height: 50px;
+	opacity: 0.7;
+	border: 4px outset #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crosscolorselect input:checked + label
+{
+	border: 4px inset #777;
+	opacity: 1;
+	position: relative;
+}
+
+label .fas
+{
+	display: none;
+	position: absolute;
+}
+
+.crosscolorselect input:checked + label .fas
+{
+	display: block;
+}
+
+div[data-togglecases]
+{
+}
+
+.pllguess
+{
+	width: auto;
+}

@@ -1,0 +1,184 @@
+#stopwatch_display {
+	font-family: 'Fugaz One', cursive;
+	font-size: 100px;
+	text-align: center;
+}
+#scramble {
+	margin: 1rem;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+	flex: 1;
+}
+
+.selectorgroup {
+	display: flex;
+	margin: 0.3rem;
+    align-items: center;
+}
+
+.selectorgroup > button,
+.selectorgroup > label,
+.selectorgroup > select
+{
+	flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+	#stopwatch_display {
+		font-family: 'Fugaz One', cursive;
+		font-size: 60px;
+		text-align: center;
+	}
+	#practice_alg {
+		font-size: 15px;
+		text-align: center;
+		font-family: 'Secular One', sans-serif;
+	}
+	#timerstats table
+	{
+		width: 100%;
+	}
+}
+
+#stopwatch_display.pressed {
+	color: red;
+}
+
+#algset_selector select {
+	padding: 0.5rem;
+	border-radius: 2px;
+}
+
+#algset_selector,
+#practice_alg_div {
+	margin: 0 auto;
+	text-align: center;
+	margin: 1rem;
+}
+
+#practice_alg_div
+{
+	display: flex;
+	border-bottom: 1px solid #555;
+    padding-bottom: 20px;
+}
+
+#timerdisplay {
+	border: 1px solid white;
+    border-radius: 2px;
+}
+
+#timerstats {
+	border: 1px solid #555;
+    border-radius: 2px;
+}
+
+
+
+#timerstats table {
+	border: none;
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#timerstats table a {
+	text-decoration: none !important;
+}
+
+#timerstats table td:nth-child(1) {
+	width: 55px;
+}
+
+#timerstats table img {
+		width: 50px;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	 -khtml-user-select: none; /* Konqueror HTML */
+	   -moz-user-select: none; /* Old versions of Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+			user-select: none; /* Non-prefixed version, currently
+								  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#algstopractice
+{
+	text-align: center;
+	display: none;
+}
+
+.algscheckbox:checked + label .algtopracticeopt 
+{
+	border: 3px inset #777;
+	background-color: #555;
+}
+
+.algscheckbox + label .algtopracticeopt 
+{
+	display: block;
+    text-align: left;
+	cursor: pointer;
+}
+
+.algtopracticeopt 
+{
+    margin: 5px 2px;
+    border: 3px outset #777;
+    padding: 5px;
+	background-color: #999;
+}
+
+.fa-eraser {
+	cursor: pointer;
+}
+
+.catstopractice
+{
+	border: 1px solid #555;
+    display: inline-table;
+    margin: 3px;
+    border-radius: 2px;
+}
+
+#selectspecificcases
+{
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+
+ul.newbreadcrumbs {
+	display: inline-block;
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin: -0.5rem;
+}
+
+ul.newbreadcrumbs li {
+	display: inline-block;
+}
+
+ul.newbreadcrumbs li + li:before {
+	content: "/ ";
+}
+
+
+
+.catstopractice .categoryselector
+{
+	padding: 0.5em;
+	background-color: #eee;
+	color: #222;
+}
+
+
+.catselector,
+#hideimage,
+.algscheckbox
+{
+	margin-right: 5px;
+}

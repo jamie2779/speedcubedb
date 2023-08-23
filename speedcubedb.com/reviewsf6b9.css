@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+
+#searchform
+{
+	display: flex;
+	justify-content: center;
+}
+
+#searchform input[type="text"]
+{    
+	font-size: 18px;
+    padding: 5px 10px;
+    border: 1px outset #777;
+    min-width: 50%;
+}
+
+#searchform button
+{
+	font-size: 18px;
+    display: flex;
+    padding: 5px 15px;
+    align-items: center;
+}
+
+.recontable button
+{
+	margin: 0 auto;
+}
+
+
+/* recons */
+
+.recon-list-item
+{
+	display: flex;	
+    flex-direction: column;
+	margin: 10px;
+	transition: all 0.5s;
+	overflow: hidden;
+	width: 200px;
+	box-shadow: 0px 20px 30px -10px rgb(56 24 26 / 40%);
+}
+
+.recon-list-item img
+{
+	transition: all 0.5s;
+}
+
+.recon-list-item img:hover
+{
+	transform: scale(1.05);
+}
+
+
+
+.recon-list-item .recon-list-item-info:before
+{
+	position: absolute;
+	z-index: -1;
+	content: '';
+	transform: translateX(-10px) translateY(-8px) skewY(-7deg);
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	min-height: 155px;
+}
+
+
+
+.recon-list-item .recon-list-item-info
+{
+	position: relative;
+	z-index: 1;
+	padding: 0px 10px;
+	text-align: left;
+	background-color: #000
+    font-weight: bold;
+}
+
+.recondate,
+.recon-list-item .recon-list-item-info small
+{
+	font-weight: normal;
+	color: #888;
+	font-size: 12px;
+	color: #ddd;
+}
+
+
+.recon-list-item .recon-list-item-info .etmdisplay:before
+{
+	content: url(assets/icons/tps-icons_ETM-White.png);
+}
+
+.recon-list-item .recon-list-item-info .etmdisplay
+{
+	display: flex;
+	font-size: 12px;
+	margin-right: 10px;
+}
+
+
+.recon-list-item .recon-list-item-info .tpsdisplay:before
+{
+	content: url(assets/icons/tps-icons_TPS-White.png);
+}
+.recon-list-item .recon-list-item-info .tpsdisplay
+{
+	display: flex;
+	font-size: 12px;
+}
+
+
+/* recontable */
+
+.recontable
+{
+	display: inline;
+}
+
+.recontable-line
+{
+	font-family: Kanit;
+	width: 100%;
+    position: relative;
+    display: inline-flex;
+    margin: 5px;
+    box-shadow: 0px 20px 30px -10px rgb(56 24 26 / 40%);
+    transition: all 0.5s;
+}
+
+.recontable-line:hover
+{
+	box-shadow: 5px 5px 10px black;
+}
+
+.recontable-line-left
+{
+	background-color: #222;
+	padding: 10px;
+    flex: 1;
+	align-items: center;
+    display: flex;
+}
+
+
+@media (max-width: 575.98px) {
+	
+	.recontable-line-left
+	{
+		flex-direction: column;
+	}
+}
+
+.recontable-line-left > div
+{
+	flex: 1;
+}
+
+
+.recontable-line-right:before
+{
+	position: absolute;
+    z-index: -1;
+	left: 0;
+    content: '';
+    transform: translateX(-14px) translateY(-10px) skewX(-10deg);
+    width: 100%;
+    height: 100%;
+	background-color: #333;
+}
+
+
+.recontable-line-right
+{
+	position: relative;
+    z-index: 1;
+	background-color: #333;
+	text-align: right;
+	padding: 10px;
+}
+
+
+
+@media (max-width: 575.98px) {
+	.recontable-line-right:before
+	{
+		display: none;
+	}
+	.recontable-line-right
+	{
+		display: flex;
+		flex-direction: column;
+		max-width: 100px;
+	}
+}
+
+.recontable-line-date
+{
+	font-size: 12px;
+    font-weight: 300;
+}
+
+.recontable-line-solver
+{
+	font-size: 22px;
+	line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.recontable-line-result
+{
+	font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+}
+.recontable-line-result-label
+{
+	font-size: 26px;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.recontable-line-product
+{
+	display: inline-block;
+    font-weight: 100;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+.recontable-line-title
+{
+	display: inline-block;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+
+.recontable-line-reconstructedby
+{
+	font-size: 12px;
+	margin-top: auto;
+	
+}
+
+.recontable-line-ETM
+{
+    font-weight: 400;
+    font-size: 18px;
+	display: inline-block;
+}
+
+.recontable-line-ETM:before
+{
+	content: url(assets/icons/tps-icons_ETM-White.png);
+}
+
+.recontable-line-TPS
+{
+    font-weight: 400;
+    font-size: 18px;
+	display: inline-block;
+}
+
+.recontable-line-TPS:before
+{
+	content: url(assets/icons/tps-icons_TPS-White.png);
+}
+
+/* search filter */
+
+.search-column
+{
+	background-color: #222;
+	overflow: hidden;
+}
+
+
+.search-filter-header
+{
+
+    font-family: 'KANIT';
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.search-filter-header:nth-child(n+2)
+{
+    border-top: 1px solid #ccc;
+}
+
+.search-filter
+{
+    font-family: 'KANIT';
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+@media (max-width: 575.98px) {
+	.search-filter
+	{
+		margin-left: 0px;
+		font-size: 12px;
+	}
+}
+.search-filter input
+{
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.search-filter label
+{
+	cursor: pointer;
+}
+
+#sortbyorder,
+#sortby
+{
+	width: 100%;
+    padding: 7px 5px;
+}
+
+@media (max-width: 992px) {
+	#searchtogglewindow
+	{
+		display: none;
+	}
+}

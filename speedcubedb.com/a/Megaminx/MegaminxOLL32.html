@@ -1,0 +1,788 @@
+
+<!doctype html>
+<html lang="en">
+  
+<!-- Mirrored from speedcubedb.com/a/Megaminx/MegaminxOLL32 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jul 2023 17:14:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<base />
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="icon" type="image/png" href="../../favicon.png"/>
+<meta name="author" content="Gil Zussman" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2NP03VW57J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2NP03VW57J'); 
+</script>
+
+<!-- jsDeliver -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js" integrity="sha512-eviLb3jW7+OaVLz5N3B5F0hpluwkLb8wTXHOTy0CyNaZM5IlShxX1nEbODak/C0k9UdsrWjqIBKOFY0ELCCArw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+ $(function() {
+	$('.lazy').Lazy({
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js" integrity="sha512-I+rKw3hArzZIHzrkdELbKqrXfkSvw/h0lW/GgB8FThaBVz2e5ZUlSW8kY8v3q6wq37eybIwyufkEZxe4qSlGcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../includes/ijsm2d2b.js?d=1" defer></script>
+<script src="../../includes/jcookie2d2b.js?d=1"></script>
+<script src="../../includes/rematrix2d2b.js?d=1"></script>
+
+<link rel="stylesheet" href="../../theme/theme87dd.css?d=2">
+
+
+<meta name="author" content="Gil Zussman" />
+
+<script>
+	$(document).ready(function() {
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		  return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+	});
+</script>	<meta name="description" content="Free online speedcubing algorithm and reconstruction database, covers every algorithm for 2x2 - 6x6, SQ1 and Megaminx" />
+	<meta name="keywords" content="Hand Shapes, Megaminx, alg, algorithm, algsheet, cubing, speedcubing, fingertricks, rubiks, speedcube, algdb, video" />
+	    
+	<script type="text/javascript" src="../../category606c.js?d=116"></script>
+	<script type="text/javascript" src="../../zzfriendly2d2b.js?d=1"></script>
+	
+	
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="SpeedCubeDB">
+    <meta property="og:url" content="https://www.speedcubedb.com/a/Megaminx/MegaminxOLL32/">
+    <meta property="og:title" content="MegaminxOLL32 (Megaminx) Speed Cube Database">
+	<meta property="og:description" content="Algorithms and fingertricks execution videos for MegaminxOLL32, Megaminx">
+    
+    <link href="../../categorytestac3d.css?d=108" rel="stylesheet">
+	<title>Hand Shapes Algorithms - Speed Cube Database</title>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351693020129127"  crossorigin="anonymous"></script>
+  </head>
+  <body>
+		<nav id="navbar-main" class="navbar navbar-expand-lg fixed-top navbar-dark py-0">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="../../index.html"><img src="../../assets/logo.png" id="logo-image" /><div id="website-title">SpeedCubeDB</div></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+		<li  class="nav-item dropdown menu-item-has-children">
+		  <a  class="nav-link active dropdown-toggle" href="#" id="menu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			<i class="fa-solid fa-trowel-bricks me-2"></i>Algorithms
+		  </a>
+		  <ul class="dropdown-menu" aria-labelledby="menu1">
+						<li class="nav-item dropdown dropend menu-item-has-children">
+				
+			  <a  class="nav-link active dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu2">
+				CFOP
+			  </a>
+			  <ul class="dropdown-menu"  aria-labelledby="menu2">
+				
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/F2L.html">F2L</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/FRUF.html">F RU F'</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/OLL.html">OLL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/PLL.html">PLL</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown dropend menu-item-has-children">
+				
+			  <a  class="nav-link active dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu3">
+				Last Layer
+			  </a>
+			  <ul class="dropdown-menu"  aria-labelledby="menu3">
+				
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/COLL.html">COLL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/WV.html">Winter Variations (WV)</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../VLS.html">Valk Last Slot (VLS)</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../ZBLL.html">ZBLL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../OLLCP.html">OLLCP</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../1LLL.html">OLLCP</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/AntiPLL.html">Anti PLL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/ELL.html">ELL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../3x3/ELL.html">CLS</a></li>
+			  </ul>
+			</li>
+			
+			<li class="nav-item dropdown dropend menu-item-has-children">
+				
+			  <a  class="nav-link active dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu3">
+				2x2
+			  </a>
+			  <ul class="dropdown-menu"  aria-labelledby="menu3">
+				
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../2x2/OrtegaOLL.html">Ortega OLL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../2x2/OrtegaPBL.html">Ortega PBL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../2x2/CLL.html">CLL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../2x2/EG1.html">EG-1</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../2x2/EG2.html">EG-2</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown dropend menu-item-has-children">
+				
+			  <a  class="nav-link active dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu3">
+				4x4
+			  </a>
+			  <ul class="dropdown-menu"  aria-labelledby="menu3">
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../4x4/OLLParity.html">OLL Parity</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../4x4/PLLParity.html">PLL Parity</a></li>
+			  </ul>
+			</li>
+			<li class="nav-item dropdown dropend menu-item-has-children">
+				
+			  <a  class="nav-link active dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu3">
+				5x5
+			  </a>
+			  <ul class="dropdown-menu"  aria-labelledby="menu3">
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../5x5/L2C.html">Last Two Centers</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../5x5/L2E.html">Last Two Edges</a></li>
+			  </ul>
+			</li>
+			
+			<li class="nav-item dropdown dropend menu-item-has-children">
+				
+			  <a  class="nav-link active dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu3">
+				Megaminx
+			  </a>
+			  <ul class="dropdown-menu"  aria-labelledby="menu3">
+				<li class="nav-item"><a class="nav-link dropdown-item" href="MegaminxEO.html">4LLL: Edge Orientation</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="MegaminxCO.html">4LLL: Corner Orientation</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="MegaminxEP.html">4LLL: Edge Permutation</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="MegaminxCP.html">4LLL: Corner Permutation</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="OLL.html">2LLL: OLL</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="PLL.html">2LLL: PLL</a></li>
+			  </ul>
+			</li>
+			
+			<li class="nav-item dropdown dropend menu-item-has-children">
+				
+			  <a  class="nav-link active dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu3">
+				Square 1
+			  </a>
+			  <ul class="dropdown-menu"  aria-labelledby="menu3">
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../SQ1/SQ1CS.html">Cube Shape</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../SQ1/SQ1CO.html">Corner Orientation</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../SQ1/SQ1EO.html">Edge Orientation</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../SQ1/SQ1CP.html">Corner Permutation</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../SQ1/SQ1EP.html">Edge Permutation</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-item" href="../SQ1/SQ1Parity.html">Edge Parity</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		</li>
+        <li class="nav-item">
+          <a href="../../r/index.html"  class="nav-link active"><i class="fa-solid fa-newspaper me-2"></i>Reconstructions</a>
+        </li>	
+        <li class="nav-item d-none">
+          <a href="../../r/index.html"  class="nav-link active"><i class="fa-solid fa-chalkboard-user me-2"></i>Lessons</a>
+        </li>	
+		<li class="nav-item ">
+          <a href="../../t.html"  class="nav-link active"><i class="fa-solid fa-stopwatch me-2"></i>Practice</a>
+        </li>	
+        <li class="nav-item">
+          <a href="../../reviews.html" class="nav-link active"><i class="fa-solid fa-magnifying-glass me-2"></i>Reviews</a>
+        </li>		
+		<li  class="nav-item">			<a id="googlelogin" href='https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=56005720278-hgk8iclpv6jogpih0d5slqjtgmoldquo.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.speedcubedb.com%2Fsso.php&amp;state&amp;scope=email%20profile&amp;approval_prompt=auto'><img src="../../assets/btn_google_signin_dark_normal_web.png" alt="Sign in via Google" /></a>
+			</li>
+			        
+      </ul>
+	  <a class="nav-item float-right btn btn-primary" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=YXDSNHGD65YHU&amp;currency_code=USD&amp;source=url"><i class="fa fa-heart me-2"></i>Support</a>
+
+    </div>
+  </div>
+  
+  <script>
+  
+  $('.menu-item-has-children .menu-item-has-children a').on("click", function(e){
+		if ($(this).next('ul').length != 0)
+		{
+			$(this).next('ul').toggle();
+			e.stopPropagation();
+			e.preventDefault();
+		}
+		
+		let thiselement = this;
+		$(this).parent().parent().find(".dropdown-toggle").each(function(){
+			if ($(this).next('ul').length != 0 && $(this).next('ul').is(":visible"))
+			{
+				if (thiselement != this)
+				{
+					$(this).removeClass("show");
+					$(this).next('ul').hide();
+					$(this).attr("aria-expanded","false");
+					$(this).prop("aria-expanded","false");
+				}
+			}
+		});
+	});
+  </script>
+</nav>
+<div style="width: 100%; height: 70px;"></div>
+		
+		
+		
+		
+		
+		<!-- Breadcrumbs -->
+		<div class="container-fluid mt-2">
+			<nav style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='white'/%3E%3C/svg%3E&quot;);" aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item"><a href="../Megaminx.html">Megaminx</a></li>
+					<li class="breadcrumb-item active" aria-current="page"><a href="MegaminxOLL32.html">Hand Shapes</a></li>
+				</ol>
+			</nav>
+		</div>
+		<!-- /Breadcrumbs -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-4">
+				
+					<div class="scdb-panel mt-0">
+						<div class="d-flex align-items-center pt-2 pb-3 scdb-panel-title" style="position: relative">
+							<img src="../../template/renderers/cache/megacube/100/yyllylyyyll-lylyllylllllyyl----.png"/>									
+							<h1 class="category-name mb-0 ms-2 flex-fill" style="font-weight: 800;">Hand Shapes</h1>
+							<div class="mx-3 align-self-center">
+								<span class="d-none d-sm-inline-block badge bg-secondary">Megaminx</span>
+							</div>
+							
+							<div class="d-flex">
+																<a class="btn btn-outline-light" target="_blank" href="../../p/Megaminx/doc-36.pdf">
+									<i style="color: red;" class="fas fa-file-pdf"></i>
+								</a>
+							</div>
+						</div>
+						<div class="scdb-panel-content">
+							
+							
+							<h2 class="subcaption">Description</h2>
+							<div>
+															</div>
+							
+							<div class="subcaption mt-2">Number of Cases:</div>
+							<div>4</div>
+							
+													</div>
+					</div>
+										
+										
+					
+										<div>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351693020129127"
+							 crossorigin="anonymous"></script>
+						<!-- Category Page -->
+						<ins class="adsbygoogle"
+							 style="display:block"
+							 data-ad-client="ca-pub-9351693020129127"
+							 data-ad-slot="9591548824"
+							 data-ad-format="auto"
+							 data-full-width-responsive="true"></ins>
+						<script>
+							 (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+				</div>
+				<div class="col col-md-8">
+					<div class="scdb-panel m-0">
+						<div class="scdb-panel-title py-2 justify-content-between d-flex">
+							<h4 class="category-name mb-0 ms-2 flex-fill">Subsets</h4>
+							<div class="float: right;">
+								<label for="formFileMultiple" class="me-2">Cross Color:</label>
+								<select id="crossorientation">
+									<option value="z2" selected>White</option>
+									<option value="" >Yellow</option>
+									<option value="x'" >Green</option>
+									<option value="x" >Blue</option>
+									<option value="z" >Red</option>
+									<option value="z'" >Orange</option>
+								</select>
+							</div>
+						</div>
+						<div class="subset-select scdb-panel-content">
+															<div class="category-summary" data-filter="">
+									
+									<img src="../../template/renderers/cache/megacube/100/yyllylyyyll-lylyllylllllyyl----.png"/>										 
+									
+										<div></div>
+									</div>
+														</div>
+					</div>
+					
+					
+					<!-- Algorithms -->
+					<div class="">
+												
+								<div class="row singlealgorithm g-0 py-2" data-subgroup="" >
+									
+									<!-- Algorithm info -->
+									<div class="col-md-3 col-sm-3 text-center pt-3">
+										
+										
+										<!-- Image -->
+										<a style="color: inherit; text-decoration: none;" href="MegaminxOLL32/32A-.html"><img src="../../template/renderers/cache/megacube/100/yyllylyyyll-lylyllylllllyyl----.png"/><h3>32A-</h3></a>										<h5>
+																														
+										<div class="setup-case">
+																				</div>
+									</div>
+									<!-- /Algorithm info -->
+									
+									
+									<!-- Algorithm Alternatives -->
+									<div class="col">
+										<!-- orientations/slots -->
+																				<!-- orientations/slots -->
+										
+										
+										<!-- Alternatives -->
+										<div data-ori='0'><ul class='list-group alg-list-group pro-algs unloaded' data-t="32A-,0" style='display: none;'><div class='text-center'><i class="fas fa-2x fa-spinner fa-spin me-2"></i>Loading...</div></ul><ul class='list-group alg-list-group community-algs' data-t="32A-,0"><li class='list-group-item'>													
+													<div > R U R' U F' U F U' R U2' R'</div>
+																										
+													<div class="singlealgorithm-status">
+														<a class="btn p-0 me-2 selectbox-menu justify-content-center" href="#" target='_blank'> <img src="../../assets/visualizer-icon.png" style="width: 20px; align-self:center"/><small>visualize</small></a>
+													
+														
+														
+																												<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center" data-learnt="0">
+															
+															<i class="fas fa-times"></i>															
+															<small>
+																Not Learnt															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																<li class="action-learnt" data-value="0" data-vote='learnt' data-sessid='' data-algid='10247' data-altid='10331' style="flex:1"><i class="fas fa-times action-notlearnt me-2"></i>Not Learnt</li>
+																<li class="action-learnt" data-value="1" data-vote='learnt' data-sessid='' data-algid='10247' data-altid='10331' style="flex:1"><i class="fab fa-leanpub action-learning me-2"></i>Learning</li>
+																<li class="action-learnt" data-value="2" data-vote='learnt' data-sessid='' data-algid='10247' data-altid='10331' style="flex:1"><i class="fas fa-check action-learnt me-2"></i>Learnt</li>
+															</ul>
+														</div>
+														
+																												
+														<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center">
+															
+															<i class="fas fa-folder-minus"></i>
+															<small>
+																Lists
+															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																																	<li class="action-bookmark" data-value="0" data-vote='bookmark' data-sessid='' data-algid='10247' data-altid='10331' data-learnt="0">
+																		<i class="fas fa-star" style="color: lightgray"></i><small style="flex:1">Bookmark</small>
+																	</li>
+																																
+																
+																
+																
+																																
+																																<li class="action-addtonewlist" data-sessid='' data-algid='10247' data-altid='10331'>
+																	<i class="fa-regular fa-square-plus me-2"></i>
+																	<small style="flex:1">Add to new list</small>
+																</li>
+																																
+															</ul>
+														</div>
+														
+														
+														
+														
+														
+													</div>
+													
+													</li>
+													</ul><div class="text-center mt-2"><a class="btn btn-outline-light py-0 d-inline-flex align-items-center" href="MegaminxOLL32/32A-/0.html">	<i class="fa fa-chevron-circle-down my-1 me-2" aria-hidden="true"></i><small>More Algorithms</small></a></div></div>							
+									</div>
+									<!-- /Algorithm Alternatives -->
+									
+									
+								</div>
+							
+														
+								<div class="row singlealgorithm g-0 py-2" data-subgroup="" >
+									
+									<!-- Algorithm info -->
+									<div class="col-md-3 col-sm-3 text-center pt-3">
+										
+										
+										<!-- Image -->
+										<a style="color: inherit; text-decoration: none;" href="MegaminxOLL32/32A%2b.html"><img src="../../template/renderers/cache/megacube/100/ylyllyllyyy-llylyllyyllllly----.png"/><h3>32A+</h3></a>										<h5>
+																														
+										<div class="setup-case">
+																				</div>
+									</div>
+									<!-- /Algorithm info -->
+									
+									
+									<!-- Algorithm Alternatives -->
+									<div class="col">
+										<!-- orientations/slots -->
+																				<!-- orientations/slots -->
+										
+										
+										<!-- Alternatives -->
+										<div data-ori='0'><ul class='list-group alg-list-group pro-algs unloaded' data-t="32A+,0" style='display: none;'><div class='text-center'><i class="fas fa-2x fa-spinner fa-spin me-2"></i>Loading...</div></ul><ul class='list-group alg-list-group community-algs' data-t="32A+,0"><li class='list-group-item'>													
+													<div > R U R' U' R' F R2 U R' U' F'</div>
+																										
+													<div class="singlealgorithm-status">
+														<a class="btn p-0 me-2 selectbox-menu justify-content-center" href="#" target='_blank'> <img src="../../assets/visualizer-icon.png" style="width: 20px; align-self:center"/><small>visualize</small></a>
+													
+														
+														
+																												<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center" data-learnt="0">
+															
+															<i class="fas fa-times"></i>															
+															<small>
+																Not Learnt															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																<li class="action-learnt" data-value="0" data-vote='learnt' data-sessid='' data-algid='10248' data-altid='10330' style="flex:1"><i class="fas fa-times action-notlearnt me-2"></i>Not Learnt</li>
+																<li class="action-learnt" data-value="1" data-vote='learnt' data-sessid='' data-algid='10248' data-altid='10330' style="flex:1"><i class="fab fa-leanpub action-learning me-2"></i>Learning</li>
+																<li class="action-learnt" data-value="2" data-vote='learnt' data-sessid='' data-algid='10248' data-altid='10330' style="flex:1"><i class="fas fa-check action-learnt me-2"></i>Learnt</li>
+															</ul>
+														</div>
+														
+																												
+														<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center">
+															
+															<i class="fas fa-folder-minus"></i>
+															<small>
+																Lists
+															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																																	<li class="action-bookmark" data-value="0" data-vote='bookmark' data-sessid='' data-algid='10248' data-altid='10330' data-learnt="0">
+																		<i class="fas fa-star" style="color: lightgray"></i><small style="flex:1">Bookmark</small>
+																	</li>
+																																
+																
+																
+																
+																																
+																																<li class="action-addtonewlist" data-sessid='' data-algid='10248' data-altid='10330'>
+																	<i class="fa-regular fa-square-plus me-2"></i>
+																	<small style="flex:1">Add to new list</small>
+																</li>
+																																
+															</ul>
+														</div>
+														
+														
+														
+														
+														
+													</div>
+													
+													</li>
+													</ul><div class="text-center mt-2"><a class="btn btn-outline-light py-0 d-inline-flex align-items-center" href="MegaminxOLL32/32A%2b/0.html">	<i class="fa fa-chevron-circle-down my-1 me-2" aria-hidden="true"></i><small>More Algorithms</small></a></div></div>							
+									</div>
+									<!-- /Algorithm Alternatives -->
+									
+									
+								</div>
+							
+														
+								<div class="row singlealgorithm g-0 py-2" data-subgroup="" >
+									
+									<!-- Algorithm info -->
+									<div class="col-md-3 col-sm-3 text-center pt-3">
+										
+										
+										<!-- Image -->
+										<a style="color: inherit; text-decoration: none;" href="MegaminxOLL32/32B-.html"><img src="../../template/renderers/cache/megacube/100/yllyllyyyly-yyllylylllllyll----.png"/><h3>32B-</h3></a>										<h5>
+																														
+										<div class="setup-case">
+																				</div>
+									</div>
+									<!-- /Algorithm info -->
+									
+									
+									<!-- Algorithm Alternatives -->
+									<div class="col">
+										<!-- orientations/slots -->
+																				<!-- orientations/slots -->
+										
+										
+										<!-- Alternatives -->
+										<div data-ori='0'><ul class='list-group alg-list-group pro-algs unloaded' data-t="32B-,0" style='display: none;'><div class='text-center'><i class="fas fa-2x fa-spinner fa-spin me-2"></i>Loading...</div></ul><ul class='list-group alg-list-group community-algs' data-t="32B-,0"><li class='list-group-item'>													
+													<div > R U R' U R' F R F' R U2' R'</div>
+																										
+													<div class="singlealgorithm-status">
+														<a class="btn p-0 me-2 selectbox-menu justify-content-center" href="#" target='_blank'> <img src="../../assets/visualizer-icon.png" style="width: 20px; align-self:center"/><small>visualize</small></a>
+													
+														
+														
+																												<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center" data-learnt="0">
+															
+															<i class="fas fa-times"></i>															
+															<small>
+																Not Learnt															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																<li class="action-learnt" data-value="0" data-vote='learnt' data-sessid='' data-algid='10249' data-altid='10333' style="flex:1"><i class="fas fa-times action-notlearnt me-2"></i>Not Learnt</li>
+																<li class="action-learnt" data-value="1" data-vote='learnt' data-sessid='' data-algid='10249' data-altid='10333' style="flex:1"><i class="fab fa-leanpub action-learning me-2"></i>Learning</li>
+																<li class="action-learnt" data-value="2" data-vote='learnt' data-sessid='' data-algid='10249' data-altid='10333' style="flex:1"><i class="fas fa-check action-learnt me-2"></i>Learnt</li>
+															</ul>
+														</div>
+														
+																												
+														<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center">
+															
+															<i class="fas fa-folder-minus"></i>
+															<small>
+																Lists
+															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																																	<li class="action-bookmark" data-value="0" data-vote='bookmark' data-sessid='' data-algid='10249' data-altid='10333' data-learnt="0">
+																		<i class="fas fa-star" style="color: lightgray"></i><small style="flex:1">Bookmark</small>
+																	</li>
+																																
+																
+																
+																
+																																
+																																<li class="action-addtonewlist" data-sessid='' data-algid='10249' data-altid='10333'>
+																	<i class="fa-regular fa-square-plus me-2"></i>
+																	<small style="flex:1">Add to new list</small>
+																</li>
+																																
+															</ul>
+														</div>
+														
+														
+														
+														
+														
+													</div>
+													
+													</li>
+													<li class='list-group-item'>													
+													<div > y F U F' R' F R U' R' F' R </div>
+																										
+													<div class="singlealgorithm-status">
+														<a class="btn p-0 me-2 selectbox-menu justify-content-center" href="#" target='_blank'> <img src="../../assets/visualizer-icon.png" style="width: 20px; align-self:center"/><small>visualize</small></a>
+													
+														
+														
+																												<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center" data-learnt="0">
+															
+															<i class="fas fa-times"></i>															
+															<small>
+																Not Learnt															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																<li class="action-learnt" data-value="0" data-vote='learnt' data-sessid='' data-algid='10249' data-altid='10334' style="flex:1"><i class="fas fa-times action-notlearnt me-2"></i>Not Learnt</li>
+																<li class="action-learnt" data-value="1" data-vote='learnt' data-sessid='' data-algid='10249' data-altid='10334' style="flex:1"><i class="fab fa-leanpub action-learning me-2"></i>Learning</li>
+																<li class="action-learnt" data-value="2" data-vote='learnt' data-sessid='' data-algid='10249' data-altid='10334' style="flex:1"><i class="fas fa-check action-learnt me-2"></i>Learnt</li>
+															</ul>
+														</div>
+														
+																												
+														<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center">
+															
+															<i class="fas fa-folder-minus"></i>
+															<small>
+																Lists
+															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																																	<li class="action-bookmark" data-value="0" data-vote='bookmark' data-sessid='' data-algid='10249' data-altid='10334' data-learnt="0">
+																		<i class="fas fa-star" style="color: lightgray"></i><small style="flex:1">Bookmark</small>
+																	</li>
+																																
+																
+																
+																
+																																
+																																<li class="action-addtonewlist" data-sessid='' data-algid='10249' data-altid='10334'>
+																	<i class="fa-regular fa-square-plus me-2"></i>
+																	<small style="flex:1">Add to new list</small>
+																</li>
+																																
+															</ul>
+														</div>
+														
+														
+														
+														
+														
+													</div>
+													
+													</li>
+													</ul><div class="text-center mt-2"><a class="btn btn-outline-light py-0 d-inline-flex align-items-center" href="MegaminxOLL32/32B-/0.html">	<i class="fa fa-chevron-circle-down my-1 me-2" aria-hidden="true"></i><small>More Algorithms</small></a></div></div>							
+									</div>
+									<!-- /Algorithm Alternatives -->
+									
+									
+								</div>
+							
+														
+								<div class="row singlealgorithm g-0 py-2" data-subgroup="" >
+									
+									<!-- Algorithm info -->
+									<div class="col-md-3 col-sm-3 text-center pt-3">
+										
+										
+										<!-- Image -->
+										<a style="color: inherit; text-decoration: none;" href="MegaminxOLL32/32B%2b.html"><img src="../../template/renderers/cache/megacube/100/ylylyyyllyl-llylllllylyllyy----.png"/><h3>32B+</h3></a>										<h5>
+																														
+										<div class="setup-case">
+																				</div>
+									</div>
+									<!-- /Algorithm info -->
+									
+									
+									<!-- Algorithm Alternatives -->
+									<div class="col">
+										<!-- orientations/slots -->
+																				<!-- orientations/slots -->
+										
+										
+										<!-- Alternatives -->
+										<div data-ori='0'><ul class='list-group alg-list-group pro-algs unloaded' data-t="32B+,0" style='display: none;'><div class='text-center'><i class="fas fa-2x fa-spinner fa-spin me-2"></i>Loading...</div></ul><ul class='list-group alg-list-group community-algs' data-t="32B+,0"><li class='list-group-item'>													
+													<div > R U2' R2' F R F' R U2 R'</div>
+																										
+													<div class="singlealgorithm-status">
+														<a class="btn p-0 me-2 selectbox-menu justify-content-center" href="#" target='_blank'> <img src="../../assets/visualizer-icon.png" style="width: 20px; align-self:center"/><small>visualize</small></a>
+													
+														
+														
+																												<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center" data-learnt="0">
+															
+															<i class="fas fa-times"></i>															
+															<small>
+																Not Learnt															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																<li class="action-learnt" data-value="0" data-vote='learnt' data-sessid='' data-algid='10250' data-altid='10332' style="flex:1"><i class="fas fa-times action-notlearnt me-2"></i>Not Learnt</li>
+																<li class="action-learnt" data-value="1" data-vote='learnt' data-sessid='' data-algid='10250' data-altid='10332' style="flex:1"><i class="fab fa-leanpub action-learning me-2"></i>Learning</li>
+																<li class="action-learnt" data-value="2" data-vote='learnt' data-sessid='' data-algid='10250' data-altid='10332' style="flex:1"><i class="fas fa-check action-learnt me-2"></i>Learnt</li>
+															</ul>
+														</div>
+														
+																												
+														<div class="btn py-0 px-1 selectbox-menu me-2 selectbox-learnt justify-content-center">
+															
+															<i class="fas fa-folder-minus"></i>
+															<small>
+																Lists
+															</small>
+															<ul class="selectbox-dropdown">
+																<li><div class="arrow"><div></div></div></li>
+																																	<li class="action-bookmark" data-value="0" data-vote='bookmark' data-sessid='' data-algid='10250' data-altid='10332' data-learnt="0">
+																		<i class="fas fa-star" style="color: lightgray"></i><small style="flex:1">Bookmark</small>
+																	</li>
+																																
+																
+																
+																
+																																
+																																<li class="action-addtonewlist" data-sessid='' data-algid='10250' data-altid='10332'>
+																	<i class="fa-regular fa-square-plus me-2"></i>
+																	<small style="flex:1">Add to new list</small>
+																</li>
+																																
+															</ul>
+														</div>
+														
+														
+														
+														
+														
+													</div>
+													
+													</li>
+													</ul><div class="text-center mt-2"><a class="btn btn-outline-light py-0 d-inline-flex align-items-center" href="MegaminxOLL32/32B%2b/0.html">	<i class="fa fa-chevron-circle-down my-1 me-2" aria-hidden="true"></i><small>More Algorithms</small></a></div></div>							
+									</div>
+									<!-- /Algorithm Alternatives -->
+									
+									
+								</div>
+							
+												
+					</div>
+					<!-- /Algorithms -->
+				</div>
+			</div>
+		</div>
+
+
+		
+
+		
+		
+<div style="margin-top: 70px;"></div>
+<footer class="bg-dark text-center text-lg-start fixed-bottom text-white">
+
+
+  <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
+    Created By Gil Zussman - <a href="mailto:gil@speedcubedb.com">gil@speedcubedb.com</a> | <a href="../../privacypolicy.html">Privacy Policy</a> | <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=YXDSNHGD65YHU&amp;currency_code=USD&amp;source=url">Donate</a>
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  </div>
+</footer>		<style>
+	#login-lightbox
+	{
+		z-index: 1000;
+		width: 100%; 
+		height: 100%; 
+		top: 0px; 
+		left: 0px; 
+		background-color: rgb(10,10,10,0.5); 
+		position: fixed;
+		display: none;
+	}
+	#login-popup
+	{
+		position: absolute; 
+		width: 80%;
+		padding: 30px;
+		top: 50%; 
+		left: 50%; 
+		background-color: white; 
+		text-align: center;
+		transform: translatex(-50%) translatey(-50%);
+		
+	}
+</style>
+<script>
+	$(document).ready(function(){
+		$("#login-lightbox").click(function(e){
+			if (e.target == this)
+			{
+				$("#login-lightbox").fadeOut();
+			}
+		});
+	});
+</script>
+
+<div id="login-lightbox">
+	<div id="login-popup">
+			<h2>Track Your Progress</h2>
+			<h5>Algorithms Learnt, Execution Times and Personal Algorithm Sheets</h5>
+			
+						<a id="googlelogin" href='https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=56005720278-hgk8iclpv6jogpih0d5slqjtgmoldquo.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.speedcubedb.com%2Fsso.php&amp;state&amp;scope=email%20profile&amp;approval_prompt=auto'><img src="../../assets/btn_google_signin_dark_normal_web.png" alt="Sign in via Google" /></a>
+	</div>
+</div>
+  </body>
+
+<!-- Mirrored from speedcubedb.com/a/Megaminx/MegaminxOLL32 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jul 2023 17:15:04 GMT -->
+</html>

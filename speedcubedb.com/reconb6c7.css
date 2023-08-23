@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+
+.recon-container
+{	
+	overflow: hidden;
+	box-shadow: 0px 20px 30px -10px rgb(56 24 26 / 40%);
+}
+
+.recon-left
+{
+	position: relative;
+	z-index:1;
+	display: flex;
+    padding: 5px 20px;
+	flex-direction: column;
+	font-family: Kanit;
+	background-color: #222;
+}
+
+
+.recon-left:before
+{
+	background-color: #222;
+	position: absolute;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: translateX(2%) translateY(-5px) skewX(-5deg);
+}
+
+.recon-right
+{
+	background-color: #777;
+	display: flex;
+    padding: 10px 25px 10px 7%;
+	flex-direction: column;
+	font-family: Kanit;
+}
+
+.recon-solver
+{
+	font-size: 32px;
+	font-weight: 800;
+}
+
+
+.recon-result
+{
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.recon-result-sec
+{
+	display: inline;
+	font-weight: 200;
+}
+
+.recon-result-penalty
+{
+	font-size: 36px;
+    display: inline-block;
+}
+
+.recon-date
+{
+	font-weight: 500;
+}
+
+.recon-reconstructedby
+{
+	font-weight: 200;
+}
+
+/* recon set */
+
+.recon-set-btn
+{
+	background-color: #777;
+    padding: 0px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.recon-set-container
+{
+    margin-top: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    min-height: 60px;
+}
+
+.recon-set
+{
+	width: 100%;
+}
+.recon-set-item
+{   
+	position: relative;
+    background-color: #222;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 6px 3px;
+    text-align: center;
+	min-width: 50px;
+}
+
+
+.recon-set-item.active 
+{
+	background-color: #333;
+	border-width: 2px;
+	border-style: outset;
+}
+
+.recon-set-item a.active .id, 
+.recon-set-item a.active 
+{
+	font-weight: 800;
+}
+
+.recon-set-item .id
+{
+    position: absolute;
+    font-size: 12px;
+    bottom: -10px;
+    left: 50%;
+    padding: 0px 3px;
+    transform: translateX(-50%);
+	background-color: rgb(50,50,50,0.5);
+    border-radius: 6px;
+}
+
+.recon-set-item .penaltytag
+{
+	position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* right side */
+
+.recon-puzzle-type
+{
+	font-size: 32px;
+	font-weight: 800;
+    text-align: center;
+}
+
+.recon-method-type
+{
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+}
+
+/* stats table */
+
+.recon-stats-table
+{
+	margin-top: 50px;
+	display: flex;
+	
+    border: 1px solid #aaa;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.recon-result-avg
+{
+	font-size: 22px;
+    font-weight: 800;
+}
+
+
+.recon-stats-table > div
+{
+	display: flex;
+	flex-direction: column;
+	flex:1;
+}
+
+.recon-stats-table > div > div:nth-child(1),
+.recon-stats-table > div > div:nth-child(even)
+{
+	font-weight: 800;
+	margin-top: 15px;
+}
+
+.recon-stats-table > div:nth-child(n+1) > div
+{
+	text-align: center;
+}
+
+
+.recon-stats-table .label-total:before
+{
+	content: url(assets/icons/recontable/scdb_CFOP-Total.png);
+	width: 50px;
+	height: 50px;
+	 background-size: 10px 20px;
+    display: inline-block;
+    width: 10px; 
+    height: 20px;
+    content:"";
+}
+
+.recon-stats-table .infograph
+{
+	width: 50px;
+	height: 50px;
+}
+
+.info-header
+{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+    align-items: center;
+}
+
+/* Notation */
+.notation.comment {
+    color: white;
+    background-color: darkslateblue;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+
+.notation.rotation {
+	color: darkslateblue;
+	font-weight: bold;
+}
+
+/* side title */
+
+.section-side-title .fas
+{
+	color: red;
+}
+
+.recons-popout
+{
+	font-size: 26px;
+    position: relative;
+    z-index: 100;
+	background-color: #222;
+    padding: 9px 30px;
+    border-radius: 10px;
+    top: -10px;
+    font-family: 'Kanit';
+    font-weight: 700;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 15px 15px -10px rgb(56 24 26 / 40%);
+}
+
+@media (max-width: 700px) {
+	.recons-popout
+	{
+		top: 0px; 
+	}
+}
+
+.recons-popout .fas
+{
+	color: red;
+}
+
+.hardware-description
+{
+    align-self: center;
+    font-size: 20px;
+    padding-right: 40px;
+    font-weight: 100;
+}
+
+#searchform input[type="text"] {
+    font-size: 14px;
+    padding: 5px 5px;
+    border: 1px outset #777;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.recon-list-item
+{
+	display: flex;
+	flex: 1;
+	overflow: hidden;
+	box-shadow: 0px 20px 30px -10px rgb(56 24 26 / 40%);
+	align-items: stretch;
+}
+
+.recon-list-item + .recon-list-item
+{
+	margin-top: 5px;
+}
+.recon-list-item img
+{
+	max-height: 165px;
+	align-self: center;
+}
+
+.recon-list-item iframe,
+.recon-list-item img
+{
+	transition: all 0.5s;
+}
+.recon-list-item:hover img,
+.recon-list-item:hover iframe
+{
+	transform: scale(1.05);
+}
+
+.feature-list-item .content
+{
+	max-height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.feature-list-item .solver
+{
+	color: #ddd;
+}
+
+.recon-list-item .recon-list-item-info
+{
+	position: relative;
+	z-index: 1;
+	padding: 0px 10px;
+	text-align: left;
+	background-color: #000;
+    font-weight: bold;
+	border-radius: 0.25rem;
+}
+.recondate,
+.recon-list-item .recon-list-item-info small
+{
+	font-weight: normal;
+	color: #ddd;
+	font-size: 12px;
+}
+
+
+.recon-list-item .recon-list-item-info .etmdisplay:before
+{
+	content: url(assets/icons/tps-icons_ETM-White.png);
+}
+
+.recon-list-item .recon-list-item-info .etmdisplay
+{
+	display: flex;
+	font-size: 12px;
+	margin-right: 10px;
+}
+
+
+.recon-list-item .recon-list-item-info .tpsdisplay:before
+{
+	content: url(assets/icons/tps-icons_TPS-White.png);
+}
+.recon-list-item .recon-list-item-info .tpsdisplay
+{
+	display: flex;
+	font-size: 12px;
+}
+
+.readmore
+{
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.morereconstructions
+{
+	background-color: #000;
+}
+
+.readmore .fas
+{
+	color: red;
+	align-self: center;
+}
+
+.feature-list-item
+{
+	width: 100%;
+	display: inline-flex;
+	background-color: #000;
+	overflow: hidden;
+	margin-bottom: 10px;
+	box-shadow: 0px 20px 30px -10px rgb(56 24 26 / 40%);
+}
+
+
+.feature-list-item img,
+.feature-list-item iframe
+{
+	transition: all 0.5s;
+}
+
+.feature-list-item:hover img,
+.feature-list-item:hover iframe
+{
+	transform: scale(1.05);
+}
+
+
+.feature-list-item .feature-list-item-info:before
+{
+	background-color: #000;
+}
+
+.feature-list-item .feature-list-item-info small
+{
+	font-weight: normal;
+	color: #eee;
+	font-size: 12px;
+}
+
+
+.feature-list-item .header
+{
+	font-size: 32px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+.feature-list-item .feature-list-item-info
+{
+	position: relative;
+	z-index: 1;
+	padding: 0px 10px;
+	text-align: left;
+    font-weight: bold;
+}
+
+.feature-list-item .feature-list-item-info .etmdisplay:before
+{
+	content: url(assets/icons/tps-icons_ETM-White-med.png);
+}
+
+.feature-list-item .feature-list-item-info .etmdisplay
+{
+	display: flex;
+    align-items: center;
+	margin-right: 10px;
+}
+
+.feature-list-item .feature-list-item-info .tpsdisplay:before
+{
+	content: url(assets/icons/tps-icons_TPS-White-med.png);
+}
+.feature-list-item .feature-list-item-info .tpsdisplay
+{
+	background-color: #000;
+	display: flex;
+    align-items: center;
+	margin-right: 10px;
+}
+
+.data-label
+{
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.data-number
+{
+	font-size: 32px;
+	text-align: center;
+	font-weight: 800;
+}
+
+.stats-icon-div
+{
+	margin-top: 5px;
+    box-shadow: 0px 20px 30px -10px rgb(56 24 26 / 40%);
+    width: 150px;
+    background-color: #222;
+    color: white;
+}
+
+.cross-table
+{
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+}
+
+.cross-table tr td:nth-child(2n-1)
+{
+	font-weight: 800;
+	font-size: 22px;
+}
+
+.reconicon
+{
+	text-align: center;
+    background-color: #555;
+	padding-bottom: 5px;
+}
+
+.reconicon img
+{
+	width: 75px;
+}
+
+.reconrow
+{
+	position: relative;
+}
+
+.reconrow-btn
+{
+	position: absolute;
+    left: -1.8rem;
+	color: white;
+	font-size: 12px;
+	top: 3px;
+}
+
+.reconrow-stats
+{
+	position: relative;
+	width: 100%;
+	border: 1px solid #555;
+    background-color: #666;
+    padding: 7px 0px 3px 0px;
+	display: none;
+	margin-bottom: 5px;
+	margin-top: 2px;
+    transform: skewX(-5deg);
+}
+
+.linestatistics-line
+{
+	display: inline-flex;
+	width: 100%;
+    justify-content: space-around;
+    transform: skewX(5deg);
+}
+
+
+.linestatistics-line > div
+{
+	display: flex;
+    align-items: center;
+}
+
+.linestatistics-icon
+{
+	width: 1.5rem;
+	height: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.linestatistics-value
+{
+	font-weight: 800;
+	margin-right: 2px;
+}
+
+.linestatistics-label
+{
+	font-weight: 200;
+}
+
+
+
+
+.stagetag
+{
+	right: 0px;
+	padding: 2px 5px;
+	margin-left: 10px;
+	font-size: 12px;
+	background-color: #222;
+	color: #fff !important;
+	align-items: center;
+	display: inline-flex;
+	border-radius: 5px;
+	transition: transform 1s;
+	position:relative;
+}
+
+.stagetag:hover
+{
+	transform: scale(2);
+}
+
+.stagetag:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -5px;
+	top: 50%;
+	transform: translatey(-50%);
+	height: 0px;
+	width: 0px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #222;
+}
+
+.recons-new-popout
+{
+	color: white;
+    position: relative;
+    background-color: #222;
+    display: inline-flex;
+    margin-bottom: 10px;
+    font-family: 'Kanit';
+}
+
+.cateyes
+{
+	position: relative;
+}
+
+.cateyes:after
+{
+	position: absolute;
+	content:' ';
+	width: 15px;
+	height: 15px;
+	background-image: url("assets/cateyes.html");
+	background-repeat: no-repeat;
+    background-size: contain;
+	background-position: center;
+	top: 0px;
+	left: 0px;
+}
+
+.cateyes:after:hover
+{	
+	background-image: none;
+}
+
+#dview:hover img
+{
+	filter: invert(1);
+}
+
+.arrow
+  {
+    content:'';
+    position: absolute;
+    border: 8px solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: block;
+    z-index: 50;
+    border-top: 0;
+    border-bottom-color: #555;
+    top: -6px;
+    left: 30px;
+    transform: translatex(-50%);
+  }
+
+  .arrow > div
+  {
+    top: -7px;
+    right: -8px;
+    border-top: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #666;
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: block;
+    z-index: 50;
+  }
