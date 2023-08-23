@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+
+*
+{
+	font-family: 'Kanit', 'Tahoma', 'Arial';
+}
+
+
+body
+{
+	font-family: 'Kanit', 'Tahoma', 'Arial';
+	background-color: #111;
+	color: white;
+	font-size: 16px;
+}
+
+a,
+a:active,
+a:hover,
+a:visited
+{
+	text-decoration: inherit;
+	color: inherit;
+}
+
+a.underline-link:hover
+{
+	text-decoration: underline;
+}
+
+.hover-gray
+{
+	transition: background-color 0.5s ease;
+}
+
+.hover-gray:hover
+{
+	background-color: #333;
+}
+
+.table-current-recon td
+{
+	background-color: #444;
+}
+
+/* navbar */
+
+#navbar-main 
+{
+	background-color: #222;
+}
+
+#navbar-main #logo-image
+{
+	width: 25px; 
+	height: 25px;
+}
+
+#navbar-main #website-title
+{
+	font-weight: 600;
+	margin-left: 5px;
+}
+
+#navbar-main .nav-link
+{
+	padding: 15px;
+    border-right: 1px solid #353535;
+	transition: background-color 0.5s ease;
+}
+
+#navbar-main .dropdown-menu
+{
+	margin-top: 0px;
+	border: 1px solid #333;
+}
+
+#navbar-main .dropdown-menu .nav-link
+{
+	padding: 5px;
+}
+
+
+#navbar-main .dropdown-menu .nav-link.show
+{
+	background-color: #444;
+}
+
+#navbar-main .nav-link:hover
+{
+	background-color: #333;
+}
+
+#navbar-main .dropdown-menu
+{	
+    background-color: #222;
+}
+
+#navbar-main .dropdown-menu .nav-link
+{
+	margin-right: none;
+	border-right: none;
+}
+
+/* breadcrumbs */
+
+.breadcrumb
+{
+	color: white;
+}
+
+.breadcrumb a,
+.breadcrumb a:active,
+.breadcrumb a:hover,
+.breadcrumb a:visited
+{
+	text-decoration: inherit;
+	color: inherit;
+}
+
+.breadcrumb .breadcrumb-item
+{
+	color: #aaa;
+}
+
+.breadcrumb .breadcrumb-item.active
+{
+	color: #fff;
+}
+
+/* buttons */
+.btn
+{	
+    padding: 0px 10px;
+}
+
+/* panels */
+.scdb-panel
+{
+    background-color: #222;
+    color: white;
+    padding: 5px;
+    margin: 7px;
+}
+
+.scdb-panel-title
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+	border-bottom: 1px solid #555;
+}
+
+.scdb-panel-content
+{
+	color: white;
+	padding: 5px;
+}
+
+/* index */
+.scdb-website-stats
+{
+	font-size: 22px;
+}
+
+.scdb-website-stats > div:nth-child(1)
+{
+	margin-right: 5px;
+	font-weight: 800;
+}
+
+.scdb-website-stats > div:nth-child(2)
+{
+	font-weight: 200;
+}
+
+/* tabs */
+.nav-tabs
+{
+    border-color: #555;
+}
+.nav-tabs .nav-link
+{
+	color: #999;
+	background-color: #222;
+}
+.nav-tabs .nav-link:hover
+{
+	color: #ccc;
+}
+.nav-tabs .nav-link.active
+{
+	color: #fff;
+	background-color: #444;
+    border-color: #555;
+}
+
+#crossorientation
+{
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.thintitle
+{
+	font-size: 18px;
+    font-weight: 100;
+}
+
+.author
+{	
+    font-size: 12px;
+}
